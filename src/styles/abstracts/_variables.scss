@@ -1,0 +1,35 @@
+
+
+// Spacing
+$section-padding-y: 5.625rem;
+$section-padding-top: 5.625rem;
+$section-padding-bottom: 5.625rem;
+
+
+$section-padding-x:2rem;
+
+$section-padding: $section-padding-y $section-padding-x;
+
+$btn-padding:.8125rem 1.875rem;
+
+
+// Colors 
+$primary-color:#ff1313;
+$secondary-color:#02466D;
+$white:#FFFFFF;
+$black:#000;
+$cool-white:#f6f6f6;
+$light-grey-text:#7f8c8d;
+$dark-grey-text:#2c3e50;
+$grey-text: #707070;
+$white-text:#fff;
+// $primary-color-text:
+
+
+// Typography
+$primary-font: 'Poppins', sans-serif;
+$secondary-font:'Poppins', sans-serif;
+$maxFontSize:24px;
+$minFontSize:16px;
+$scaler:10vw;
+$scale:2vw;

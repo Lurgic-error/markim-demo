@@ -1,5 +1,13 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <base-section-hero title='About' ></base-section-hero>
+    <section-about></section-about>
+    <section-cta></section-cta>
+    <base-footer></base-footer>
   </div>
 </template>
+
+<style lang="scss" scoped>
+
+
+</style>

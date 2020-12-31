@@ -1,0 +1,31 @@
+@mixin respond($breakpoint) {
+    // tab-port
+    @if $breakpoint==tab-port {
+        @media (min-width: 36.0625em) {
+            @content
+        }; // 577px
+    }
+   // tab-land
+    @if $breakpoint==tab-land {
+        @media (min-width: 48em) {
+            @content
+        }; //768px
+    }
+    // desktop
+    @if $breakpoint==desktop {
+        @media (min-width: 64em) {
+            @content
+        }; //1024px
+    }
+    // big-desktop
+    @if $breakpoint==big-desktop {
+        @media (min-width: 90em) {
+            @content
+        }; // 1440px
+    }
+}
+
+@mixin set-background($color) {
+    background-color: $color;
+    color: set-text-color($color);
+}
