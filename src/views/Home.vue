@@ -1,19 +1,22 @@
 <template>
   <div class="view home">
-    <section-hero></section-hero>
-    <section-about></section-about>
-    <section-products></section-products>
-    <section-cta></section-cta>
-    <base-footer></base-footer>
+    <section-hero id='#home'></section-hero>
+    <section-about id='#about'></section-about>
+    <section-products id='#products'></section-products>
+    <section-cta id='#cta'></section-cta>
+    <section-contact id='#contact'></section-contact>
+    <base-footer id='#footer'></base-footer>
   </div>
 </template>
 
 <script>
+import _sectionServices from '../components/sections/_section-services.vue'
 
 
   export default {
     name: 'Home',
     components: {
+        _sectionServices
 
     }
   }

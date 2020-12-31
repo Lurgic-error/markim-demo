@@ -1,17 +1,17 @@
 <template>
     <header class="base-header">
         <nav class="base-nav">
-            <img src="../../assets/Asset27@300x.png" alt="" class="nav-brand">
+            <!-- <img src="../../assets/Asset27@300x.png" alt="" class="nav-brand"> -->
+            <h2 class="nav-brand">MAR-KIM GROUP</h2>
 
             <span class="nav-collapse icon-menu" @click.prevent='open' v-if="!opened"></span>
             <span class="nav-collapse icon-github" @click.prevent='close' v-if="opened"></span>
 
             <ul class="navbar" :class="[opened ? 'show' : '']">
-                <li class="navbar-item"><a href="/" class="navbar-link">Home</a></li>
-                <li class="navbar-item"><a href="/about" class="navbar-link">About</a></li>
-                <li class="navbar-item"><a href="/services" class="navbar-link">Services</a></li>
-                <li class="navbar-item"><a href="/blogs" class="navbar-link">Blog</a></li>
-                <li class="navbar-item"><a href="/contact" class="navbar-link">Contact</a></li>
+                <li class="navbar-item"><a href="#home" class="navbar-link ">Home</a></li>
+                <li class="navbar-item"><a href="#about" class="navbar-link ">About</a></li>
+                <li class="navbar-item"><a href="#products" class="navbar-link ">Products</a></li>
+                <li class="navbar-item"><a href="#contact" class="navbar-link ">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -91,6 +91,7 @@
                 width: auto;
                 object-fit: cover;
                 transition: all .5s linear;
+                color: white;
 
                 @include respond(desktop) {
                     height: 50px;
@@ -121,7 +122,7 @@
                 .navbar-item {
                     padding: .8125rem 0;
 
-                    .navbar-link {
+                    .navbar-link  {
                         padding: .8125rem;
                         text-decoration: none;
                         color: white;
@@ -145,7 +146,7 @@
                     .navbar-item {
                         padding: 0;
 
-                        .navbar-link {
+                        .navbar-link  {
                             padding: .8125rem;
                             text-decoration: none;
                             color: white;
@@ -173,7 +174,7 @@
     }
 
     .bg {
-    background: rgb(1, 9, 20) !important;
+    background: rgb(173, 12, 12) !important;
     transition: all .2s ease-in;
 
     nav {

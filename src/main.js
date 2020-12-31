@@ -12,6 +12,9 @@ import '@/components/sections/_globals'
 import 'animate.css'
 import './assets/fonts/style.css'
 import './styles/main.scss'
+import OnScrollAnimation from './directives/on-scroll-animation'
+
+Vue.directive('onscrollanimation', OnScrollAnimation)
 
 Vue.config.productionTip = false
 

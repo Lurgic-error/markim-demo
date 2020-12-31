@@ -1,8 +1,8 @@
 <template>
     <div class="section section-hero">
         <div class="section-content">
-            <div class="hero-caption">
-                <h1 class="caption-title">
+            <div class="hero-caption animate__animated animate__fadeInUp">
+                <h1 class="caption-title " > 
                     Large Scale Modern Enterprise
                 </h1>
 

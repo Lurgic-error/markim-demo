@@ -1,6 +1,6 @@
 <template>
   <div class="scroll-to-top" @click="scrollToTop">
-    <span class="icon-arrow-up2"></span>
+    <span class="icon-keyboard_arrow_up"></span>
   </div>
 </template>
 
@@ -34,7 +34,7 @@
 <style lang="scss" scoped>
   .scroll-to-top {
     background-color: $primary-color;
-    border-radius: 4px;
+    border-radius: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,12 +42,12 @@
     z-index: 100;
     bottom: 20px;
     right: 20px;
-    padding: .3125rem;
+    padding: .5rem;
     display: none;
   }
 
-  .icon-arrow-up2 {
-    font-size: 1.5rem;
+  .icon-keyboard_arrow_up{
+    font-size: 1.825rem;
     color: white;
   }
 

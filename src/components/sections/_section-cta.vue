@@ -1,8 +1,8 @@
 <template>
   <div class="section section-cta">
       <div class="section-content">
-        <h3 class="section-title text-center">Choose Us</h3>
-        <p class="section-text text-center">
+        <h3 class="section-title text-center" v-onscrollanimation>Choose Us</h3>
+        <p class="section-text text-center" v-onscrollanimation>
             Being one of the largest manufacturers in Tanzania, we have an advanced production line which uses state of the art Technology from Turkey helping us make your dreams come true.
         </p>
       </div>

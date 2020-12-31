@@ -1,22 +1,22 @@
 <template>
     <div class="section section-products">
 
-        <h3 class="section-title text-capitalize text-center">Our Products</h3>
+        <h3 class="section-title text-capitalize text-center" v-onscrollanimation>Our Products</h3>
 
         <div class="section-content">
             <!-- Products Tabs -->
             <b-tabs pills  active-nav-item-class="active-tab" class="product-tabs">
                 <b-tab class="product-tab-item" title="All" variant='danger' title-link-class='tab-link'>
                     <div class="product-image-container">
-                        <div class="product-image-wrapper">
+                        <div class="product-image-wrapper" v-onscrollanimation>
                             <b-img fluid alt="product-image" class="product-image" src="../../assets/hero-img-1.jpg">
                             </b-img>
                         </div>
-                        <div class="product-image-wrapper">
+                        <div class="product-image-wrapper" v-onscrollanimation>
                             <b-img fluid alt="product-image" class="product-image" src="../../assets/hero-img-1.jpg">
                             </b-img>
                         </div>
-                        <div class="product-image-wrapper">
+                        <div class="product-image-wrapper" v-onscrollanimation>
                             <b-img fluid alt="product-image" class="product-image" src="../../assets/hero-img-1.jpg">
                             </b-img>
                         </div>
@@ -25,15 +25,15 @@
 
                 <b-tab title-link-class='tab-link' class="product-tab-item" title="Constructions">
                     <div class="product-image-container">
-                        <div class="product-image-wrapper">
+                        <div class="product-image-wrapper" v-onscrollanimation>
                             <b-img fluid alt="product-image" class="product-image" src="../../assets/hero-img-2.jpg">
                             </b-img>
                         </div>
-                        <div class="product-image-wrapper">
+                        <div class="product-image-wrapper" v-onscrollanimation>
                             <b-img fluid alt="product-image" class="product-image" src="../../assets/hero-img-2.jpg">
                             </b-img>
                         </div>
-                        <div class="product-image-wrapper">
+                        <div class="product-image-wrapper" v-onscrollanimation>
                             <b-img fluid alt="product-image" class="product-image" src="../../assets/hero-img-2.jpg">
                             </b-img>
                         </div>
@@ -43,15 +43,15 @@
 
                 <b-tab title-link-class='tab-link' class="product-tab-item" title="Generators">
                     <div class="product-image-container">
-                        <div class="product-image-wrapper">
+                        <div class="product-image-wrapper" v-onscrollanimation>
                             <b-img fluid alt="product-image" class="product-image" src="../../assets/hero-img-1.jpg">
                             </b-img>
                         </div>
-                        <div class="product-image-wrapper">
+                        <div class="product-image-wrapper" v-onscrollanimation>
                             <b-img fluid alt="product-image" class="product-image" src="../../assets/hero-img-1.jpg">
                             </b-img>
                         </div>
-                        <div class="product-image-wrapper">
+                        <div class="product-image-wrapper" v-onscrollanimation>
                             <b-img fluid alt="product-image" class="product-image" src="../../assets/hero-img-1.jpg">
                             </b-img>
                         </div>
@@ -61,15 +61,15 @@
 
                 <b-tab title-link-class='tab-link' class="product-tab-item" title="Mar-Kim Uniplast">
                     <div class="product-image-container">
-                        <div class="product-image-wrapper">
+                        <div class="product-image-wrapper" v-onscrollanimation>
                             <b-img fluid alt="product-image" class="product-image" src="../../assets/hero-img-2.jpg">
                             </b-img>
                         </div>
-                        <div class="product-image-wrapper">
+                        <div class="product-image-wrapper" v-onscrollanimation>
                             <b-img fluid alt="product-image" class="product-image" src="../../assets/hero-img-2.jpg">
                             </b-img>
                         </div>
-                        <div class="product-image-wrapper">
+                        <div class="product-image-wrapper" v-onscrollanimation>
                             <b-img fluid alt="product-image" class="product-image" src="../../assets/hero-img-2.jpg">
                             </b-img>
                         </div>
@@ -79,15 +79,15 @@
 
                 <b-tab title-link-class='tab-link' class="product-tab-item" title="Swimming Pools">
                     <div class="product-image-container">
-                        <div class="product-image-wrapper">
+                        <div class="product-image-wrapper" v-onscrollanimation>
                             <b-img fluid alt="product-image" class="product-image" src="../../assets/imgs/swimming-1.jpg">
                             </b-img>
                         </div>
-                        <div class="product-image-wrapper">
+                        <div class="product-image-wrapper" v-onscrollanimation>
                             <b-img fluid alt="product-image" class="product-image" src="../../assets/imgs/swimming-2.png">
                             </b-img>
                         </div>
-                        <div class="product-image-wrapper">
+                        <div class="product-image-wrapper" v-onscrollanimation>
                             <b-img fluid alt="product-image" class="product-image" src="../../assets/imgs/swimming-3.jpg">
                             </b-img>
                         </div>
@@ -97,15 +97,15 @@
 
                 <b-tab title-link-class='tab-link' class="product-tab-item" title="Property Rental">
                     <div class="product-image-container">
-                        <div class="product-image-wrapper">
+                        <div class="product-image-wrapper" v-onscrollanimation>
                             <b-img fluid alt="product-image" class="product-image" src="../../assets/hero-img-2.jpg">
                             </b-img>
                         </div>
-                        <div class="product-image-wrapper">
+                        <div class="product-image-wrapper" v-onscrollanimation>
                             <b-img fluid alt="product-image" class="product-image" src="../../assets/hero-img-2.jpg">
                             </b-img>
                         </div>
-                        <div class="product-image-wrapper">
+                        <div class="product-image-wrapper" v-onscrollanimation>
                             <b-img fluid alt="product-image" class="product-image" src="../../assets/hero-img-2.jpg">
                             </b-img>
                         </div>
@@ -131,6 +131,20 @@
 </script>
 
 <style lang="scss" scoped>
+
+    .before-enter {
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all 2s ease-out;
+    }
+
+    .enter {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+
+
     .section-products {
 
         .section-title {
