@@ -120,7 +120,7 @@
 
     .footer-top {
       padding: 2rem 1rem;
-      // background-color: rgb(226, 27, 27);
+      background-color: rgb(226, 27, 27);
 
       @include respond(tab-land) {
         padding: 4rem;
@@ -185,7 +185,7 @@
         padding: 2rem 6rem;
       }
 
-      // background-color: rgba(185, 6, 6, 0.726);
+      background-color: rgba(185, 6, 6, 0.726);
 
       .footer-text {
         color: white;
